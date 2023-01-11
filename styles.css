@@ -1,23 +1,84 @@
-*{
+:root {
+    --firstColor: #e94959;
+    --bodyColor: #f7f7f8;
+    --headerColor: #fff;
+    --titleColor: #262626;
+    --grey: #e6e6e6;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'monserrat', sans-serif;
 }
-.container{
+
+header {
+    background: var(--headerColor);
+    position: fixed;
     width: 100%;
-    background-color: white; 
-    margin: 50px auto;
 }
-.wrapper{
+
+.container {
+    padding-top: 5rem;
+}
+
+.container__header {
+    height: 70px;
+    width: 90%;
+    max-width: 1024px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left__header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.left__header a {
+    text-decoration: none;
+    color: var(--titleColor);
+    font-weight: bold;
+}
+
+.right__header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.btn_1 {
+    background: var(--grey);
+    padding: .7rem .8rem;
+    border: none;
+}
+
+.btn_2 {
+    background: var(--titleColor);
+    color: var(--headerColor);
+    padding: 1rem 1.5rem;
+}
+
+/*      border-left: 1px solid grey;*/
+
+.main__img {
+    background: var(--firstColor);
+}
+
+.wrapper {
     width: 100vw;
     color: white;
-   }
- 
-   .navbar{
+}
+
+.navbar {
     display: flex;
     background-color: aquamarine;
     width: 100%;
@@ -25,24 +86,28 @@ body{
     top: 0;
     left: o;
 }
-.menu{
+
+.menu {
     display: flex;
     width: 40%;
     justify-content: space-around;
 }
-.menu li{
+
+.menu li {
     list-style: none;
-    
+
 }
-.menu a{
+
+.menu a {
     color: black;
     text-decoration: none;
 }
 
-.menu a:hover{
-background-color: rgb(108, 158, 160);
-transition: ease-in .3s
+.menu a:hover {
+    background-color: rgb(108, 158, 160);
+    transition: ease-in .3s
 }
+
 .main__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -58,7 +123,3 @@ transition: ease-in .3s
     align-items: flex-start;
     gap: 1rem;
 }
-
-
-
-
