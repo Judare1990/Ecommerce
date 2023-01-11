@@ -31,7 +31,6 @@ header {
     width: 90%;
     max-width: 1024px;
     margin: auto;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,16 +76,6 @@ header {
     width: 100vw;
     color: white;
 }
-
-.navbar {
-    display: flex;
-    background-color: aquamarine;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: o;
-}
-
 .menu {
     display: flex;
     width: 40%;
@@ -121,5 +110,50 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    gap: 1rem;
+}
+.price{
+    color: #e94959;
+}
+.products{
+    padding-top: 15rem;
+}
+.allProducts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+.allProducts a{
+    text-decoration: none;
+    font-size: xx-large;
+    color: #262626;
+    display: grid;
+    border-left: 1px solid grey;
+    justify-content: center;
+    font-weight: bold;
+    align-content: center;   
+}
+.info{
+   padding: 15%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   justify-items: center;
+   background-color:#e6e6e6
+  /* background-color:#e6e6e6;
+   font-size: x-large;
+   margin-top: 15rem;
+   align-items: center;
+   display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    height: 70%;*/
+}
+.info a{
+
+    text-decoration: none;
+    color: #262626;
+    display: grid;
     gap: 1rem;
 }
